@@ -5,21 +5,27 @@
 - built-in map/terminal gui
 - everything stored in db files
 - GUI tool for for editing/parsing db files/maps and making your own game
+- necessarily, an easy way to swap between installed "games" (maybe like pico-8, lol)
 - to be used as the basis for a MOO engine or for singleplayer games
-- a time system (this might require learning async)
+- a time/turn/tick/step system (this might require learning async)
 - something like gurps for dnd flavor
+---
 
 # todo
-- create basic structures and object relationships
+- research arrays/lists/arraylists/maps/hashmaps/treemaps/etc
+and how they should map to game data
+- basic protostype setup
+- - some rooms you can move around in
+- - the player entity
+- - very basic commands amd interaction
 - understand how XML files work
-
+---
 # needed systems
-- a command parser to interpret commands
-- a thing that holds the world and all its rooms,
-and the pathways between them, on a coordinate grid 
-including everything  inside them (chests, tables, 
-monsters, npcs, the player, etc) 
-- classes for all the entities in the world
-- action/interaction handlers between entities and items
-- inventory systems
-- xml parser that can feed information into entity factories
+- command parser and handler
+- 2d world map of room objects with grid coords
+- - rooms should contain and keep track of all the entities inside of them
+- - there needs to be a distinction between regular entities and interactable room fixtures (i.e. stove, chest, poster)
+- inventory/equipment system
+- combat
+- npcs/shopkeepers
+- xml parser that can feed information into setup
