@@ -1,3 +1,4 @@
+# the idea
 - ansi color support (first basic support then 256 color)
 - verb handling
 - maps, rooms, items, objects and monsters
