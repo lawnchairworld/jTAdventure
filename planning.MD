@@ -9,10 +9,11 @@
 - to be used as the basis for a MOO engine or for singleplayer games
 - a time/turn/tick/step system (this might require learning async)
 - something like gurps for dnd flavor
+- possibly ingame scripting like other muds
 ---
 
 # todo
-- research arrays/lists/arraylists/maps/hashmaps/treemaps/etc
+- research arrays/lists/arraylists/maps/hashmaps/treemaps/etc.
 and how they should map to game data
 - basic protostype setup
 - - some rooms you can move around in
@@ -27,5 +28,5 @@ and how they should map to game data
 - - there needs to be a distinction between regular entities and interactable room fixtures (i.e. stove, chest, poster)
 - inventory/equipment system
 - combat
-- npcs/shopkeepers
+- npcs/shopkeepers/monsters
 - xml parser that can feed information into setup

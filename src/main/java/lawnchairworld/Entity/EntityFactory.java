@@ -1,4 +1,4 @@
-package lawnchairworld;
+package lawnchairworld.Entity;
 
 /*
 
