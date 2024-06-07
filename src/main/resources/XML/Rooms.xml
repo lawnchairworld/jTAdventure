@@ -1,0 +1,52 @@
+<rooms>
+    <room title="Garden of Rebirth">
+        <description>
+            A peaceful place where all new spirits arise.
+        </description>
+        <x>0</x>
+        <y>0</y>
+        <z>0</z>
+        <color>ANSI_YELLOW</color>
+        <glyph>¤</glyph>
+    </room>
+    <room title="The Garden's Gates">
+        <description>
+            Leave here, and no one will protect you.
+        </description>
+        <x>0</x>
+        <y>1</y>
+        <z>0</z>
+        <color>ANSI_GREEN</color>
+        <glyph>G</glyph>
+    </room>
+    <room title="The Garden's Fountains">
+        <description>
+            Sprawling, ornate marble-work and the sound of running water run through this area.
+        </description>
+        <x>1</x>
+        <y>0</y>
+        <z>0</z>
+        <color>ANSI_BLUE</color>
+        <glyph>F</glyph>
+    </room>
+    <room title="The Garden's Armoury">
+        <description>
+            Your masters have gracefully supplied you the arms necessary for your journey.
+        </description>
+        <x>-1</x>
+        <y>0</y>
+        <z>0</z>
+        <color>ANSI_RED</color>
+        <glyph>â</glyph>
+    </room>
+    <room title="Elevator to Heaven">
+        <description>
+            The receptionist isn't going to let you through.
+        </description>
+        <x>0</x>
+        <y>-1</y>
+        <z>0</z>
+        <color>ANSI_WHITE</color>
+        <glyph>±</glyph>
+    </room>
+</rooms>

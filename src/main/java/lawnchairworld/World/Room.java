@@ -10,6 +10,20 @@ public class Room {
     String description;
     public int x;
     public int y;
+    public int z;
+    String color;
+    String glyph;
+
+    Room(String title, String description, int x, int y, int z, String color, String glyph) {
+        this.title = title;
+        this.description = description;
+        this.x = x;
+        this.y = y;
+        this.z = z;
+        this.players = new ArrayList<>();
+        this.color = color;
+        this.glyph = glyph;
+    }
 
     public ArrayList<Player> getPlayers() {
         return players;
@@ -17,6 +31,10 @@ public class Room {
 
     public void addPlayer(Player player) {
         this.players.add(player);
+    }
+
+    public void removePlayer(Player player) {
+        this.players.remove(player);
     }
 
     public int getX() {
@@ -27,10 +45,6 @@ public class Room {
         return y;
     }
 
-    public void removePlayer(Player player) {
-        this.players.remove(player);
-    }
-
     public String getTitle() {
         return title;
     }
@@ -39,11 +53,4 @@ public class Room {
         return description;
     }
 
-    Room(String title, String description, int x, int y) {
-        this.title = title;
-        this.description = description;
-        this.x = x;
-        this.y = y;
-        this.players = new ArrayList<>();
-    }
 }

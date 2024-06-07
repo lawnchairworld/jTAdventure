@@ -20,10 +20,6 @@ public class Parser {
     Player player;
 
     public Parser(Player user) {
-        //unsure as how to do aliases, maybe store as 1 big string with spaces inbetween
-        //then split and check through upon parse
-        //but you shouldnt be creating and splitting a string every time a command is parsed
-        //todo aliases
         this.player = user;
         com = new Commands(this.player);
         commandMap = new HashMap<>();
@@ -42,7 +38,7 @@ public class Parser {
             for (String[] sa : commandMap.keySet()) {
                 if (Arrays.asList(sa).contains(input)) {
                     Method m = commandMap.get(sa);
-                    m.invoke(com);
+                    m.invoke(com, input);
                     //to avoid "not understanding" an understood command
                     break;
                 }

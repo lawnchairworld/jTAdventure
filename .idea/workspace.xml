@@ -4,28 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38b0952e-c076-410a-9357-a3da126b3694" name="Changes" comment="barebones">
-      <change afterPath="$PROJECT_DIR$/qodana.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/Commander/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/Commander/Parser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/Entity/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/TimeQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/World/Map.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/World/World.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="38b0952e-c076-410a-9357-a3da126b3694" name="Changes" comment="oh god">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/Commander/InputHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/Commander/OutputHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/XML/xmlReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/XML/Rooms.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/planning.MD" beforeDir="false" afterPath="$PROJECT_DIR$/planning.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lawnchairworld/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/Color.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lawnchairworld/Commander.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lawnchairworld/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/Commander/Commands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lawnchairworld/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/Entity/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lawnchairworld/EntityFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/Entity/EntityFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lawnchairworld/Commander/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/Commander/Commands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lawnchairworld/Commander/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/Commander/Parser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lawnchairworld/Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/Initializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/lawnchairworld/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lawnchairworld/Player.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lawnchairworld/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/World/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lawnchairworld/RoomFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/World/RoomFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lawnchairworld/World/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/World/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lawnchairworld/World/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/World/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lawnchairworld/World/RoomFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/World/RoomFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/lawnchairworld/World/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/World/World.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +50,7 @@
 }</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
+    <option name="showPreview" value="true" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -70,22 +63,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.Unnamed.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/deck/Downloads/AsciiPanel-master",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.sourceCode"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Unnamed.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/deck/IdeaProjects/jTAdventure/src/main/java/lawnchairworld/XML&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
-  <component name="QodanaReportsService">
-    <option name="descriptions">
-      <ReportDescription localRun="true" path="/tmp/qodana_output/qodana.sarif.json" reportGuid="4fdbc8b1-059c-4328-922e-7fca1b00f80f" reportId="jTAdventure/qodana/2024-06-03" />
-    </option>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/lawnchairworld/XML" />
+      <recent name="$PROJECT_DIR$/target/classes/lawnchairworld/XML" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Unnamed">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
@@ -162,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717400997633</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="oh god">
+      <option name="closed" value="true" />
+      <created>1717537707768</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717537707768</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,6 +181,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="..." />
     <MESSAGE value="barebones" />
-    <option name="LAST_COMMIT_MESSAGE" value="barebones" />
+    <MESSAGE value="oh god" />
+    <option name="LAST_COMMIT_MESSAGE" value="oh god" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="roomList" />
+        <watch expression="map" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

@@ -19,7 +19,7 @@ public class Commands {
     }
 
     @Command(aliases={"help", "info"}, helpinfo="List all available commands, or inquire about a specific command")
-    public void help() {
+    public void help(String input) {
         for (Method m : Commands.class.getMethods()) {
             if (m.isAnnotationPresent(Command.class)) {
                 //only the first primary name for each command
@@ -32,17 +32,35 @@ public class Commands {
     }
 
     @Command(aliases={"quit", "exit", "logout", "disconnect", "dc"}, helpinfo="Quits the game.")
-    public void exitGame() {
+    public void exitGame(String input) {
         System.out.println(Color.ANSI_CYAN + "Goodbye!" + Color.ANSI_RESET);
         System.exit(0);
     }
 
-    @Command(aliases={"north", "n"}, helpinfo="Goes north")
-    //ugly and just for testing
-    public void goNorth() {
-        System.out.println("You head north.");
-        World.getMap().movePlayer("n", player);
-        System.out.println(World.getMap().getRoomOfPlayer(player).getTitle());
-        System.out.println(World.getMap().getRoomOfPlayer(player).getDescription());
+    @Command(aliases={
+            "north", "n", "s", "south", "w", "west", "e", "east", "ne", "northeast", "nw", "northwest",
+            "se", "southeast", "sw", "southwest"
+    }, helpinfo="Go north.")
+    public void move(String input) {
+        switch (input) {
+            case "n":
+            case "north":
+                World.map.movePlayer("n", player);
+                break;
+            case "s":
+            case "south":
+                World.map.movePlayer("s", player);
+                break;
+            case "w":
+            case "west":
+                World.map.movePlayer("w", player);
+                break;
+            case "e":
+            case "east":
+                World.map.movePlayer("e", player);
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + input);
+        }
     }
 }

@@ -3,17 +3,21 @@ package lawnchairworld.World;
 import lawnchairworld.Commander.Parser;
 import lawnchairworld.Entity.Player;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class World {
-    //a STATIC map means the map can't change... which means no user-created worlds like other MUDs
-    static Map map = new Map(RoomFactory.make());
+    public static Map map;
     Player player = new Player("dev");
     public Parser parser = new Parser(player);
     Scanner scan = new Scanner(System.in);
-
-    public static Map getMap() {
-        return map;
+    public World() {
+        try {
+            map = new Map(RoomFactory.make());
+        } catch (Exception e) {
+            System.out.println("Map creation failed.");
+            System.out.println(Arrays.toString(e.getStackTrace()));
+        }
     }
 
     @SuppressWarnings("InfiniteLoopStatement")
@@ -25,4 +29,7 @@ public class World {
         }
     }
 
+    public Map getMap() {
+        return map;
+    }
 }

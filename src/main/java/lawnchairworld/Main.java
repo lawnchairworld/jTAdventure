@@ -10,9 +10,9 @@ import lawnchairworld.World.World;
 public class Main {
     public static void main(String[] args) {
         //init
+        World world = new World();
         Initializer.init();
         //init
-        World world = new World();
         world.Run();
     }
 }
