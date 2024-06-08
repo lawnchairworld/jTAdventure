@@ -1,8 +1,8 @@
-package lawnchairworld.Commander;
+package jTAdventure.Commander;
 
-import lawnchairworld.Color;
-import lawnchairworld.Entity.Player;
-import lawnchairworld.World.World;
+import jTAdventure.Color;
+import jTAdventure.Entity.Player;
+import jTAdventure.World.World;
 
 import java.lang.reflect.Method;
 

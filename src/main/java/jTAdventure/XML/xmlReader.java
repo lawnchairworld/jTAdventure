@@ -1,4 +1,4 @@
-package lawnchairworld.XML;
+package jTAdventure.XML;
 
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.DocumentBuilder;

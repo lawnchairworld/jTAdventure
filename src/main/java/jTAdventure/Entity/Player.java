@@ -1,4 +1,4 @@
-package lawnchairworld.Entity;
+package jTAdventure.Entity;
 
 public class Player extends Entity {
     //gurps stats

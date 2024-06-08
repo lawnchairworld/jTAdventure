@@ -1,4 +1,4 @@
-package lawnchairworld;
+package jTAdventure;
 
 /*
     alternative name: TaskHandler/TaskScheduler

@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38b0952e-c076-410a-9357-a3da126b3694" name="Changes" comment="oh god">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/Commander/InputHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/Commander/OutputHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/XML/xmlReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/XML/Rooms.xml" afterDir="false" />
+    <list default="true" id="38b0952e-c076-410a-9357-a3da126b3694" name="Changes" comment="rooms, maps, and traversal (mostly)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lawnchairworld/Commander/Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/Commander/Commands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lawnchairworld/Commander/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/Commander/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lawnchairworld/Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/Initializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lawnchairworld/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lawnchairworld/World/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/World/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lawnchairworld/World/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/World/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lawnchairworld/World/RoomFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/World/RoomFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lawnchairworld/World/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lawnchairworld/World/World.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,9 +69,9 @@
       <recent name="$PROJECT_DIR$/target/classes/lawnchairworld/XML" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Unnamed">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lawnchairworld.Main" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jTAdventure.Main" />
       <module name="jTAdventure" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -95,7 +83,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="JAR Application.Unnamed" />
     </list>
   </component>
@@ -164,7 +152,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717537707768</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="rooms, maps, and traversal (mostly)">
+      <option name="closed" value="true" />
+      <created>1717799662860</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1717799662860</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,7 +178,8 @@
     <MESSAGE value="..." />
     <MESSAGE value="barebones" />
     <MESSAGE value="oh god" />
-    <option name="LAST_COMMIT_MESSAGE" value="oh god" />
+    <MESSAGE value="rooms, maps, and traversal (mostly)" />
+    <option name="LAST_COMMIT_MESSAGE" value="rooms, maps, and traversal (mostly)" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

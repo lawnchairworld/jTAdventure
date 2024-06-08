@@ -1,7 +1,7 @@
-package lawnchairworld.World;
+package jTAdventure.World;
 
-import lawnchairworld.Commander.Parser;
-import lawnchairworld.Entity.Player;
+import jTAdventure.Commander.Parser;
+import jTAdventure.Entity.Player;
 
 import java.util.Arrays;
 import java.util.Scanner;

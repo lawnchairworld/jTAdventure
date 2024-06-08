@@ -1,6 +1,6 @@
-package lawnchairworld;
+package jTAdventure;
 
-import lawnchairworld.World.World;
+import jTAdventure.World.World;
 
 /*
     this is the main game loop. all it should do is display events in the text log and await player input,

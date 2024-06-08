@@ -1,4 +1,4 @@
-package lawnchairworld.Entity;
+package jTAdventure.Entity;
 
 /*
     default null entity should be a Perfectly Generic Object

@@ -1,6 +1,6 @@
-package lawnchairworld.World;
+package jTAdventure.World;
 
-import lawnchairworld.Entity.Player;
+import jTAdventure.Entity.Player;
 
 import java.util.ArrayList;
 

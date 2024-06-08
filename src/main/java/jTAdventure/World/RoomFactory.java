@@ -1,6 +1,6 @@
-package lawnchairworld.World;
+package jTAdventure.World;
 
-import lawnchairworld.XML.xmlReader;
+import jTAdventure.XML.xmlReader;
 
 import java.util.HashMap;
 import java.util.Objects;

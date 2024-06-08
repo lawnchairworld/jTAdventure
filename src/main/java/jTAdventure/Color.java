@@ -1,4 +1,4 @@
-package lawnchairworld;
+package jTAdventure;
 
 @SuppressWarnings("unused")
 public class Color {
