@@ -1,4 +1,4 @@
-package jTAdventure.Entity;
+package jtadventure.entity;
 
 /*
 

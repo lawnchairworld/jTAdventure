@@ -1,4 +1,4 @@
-package jTAdventure;
+package jtadventure;
 
 /*
     alternative name: TaskHandler/TaskScheduler

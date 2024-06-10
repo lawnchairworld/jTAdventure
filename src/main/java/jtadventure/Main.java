@@ -1,6 +1,7 @@
-package jTAdventure;
+package jtadventure;
 
-import jTAdventure.World.World;
+import jtadventure.world.Room;
+import jtadventure.world.World;
 
 /*
     this is the main game loop. all it should do is display events in the text log and await player input,
@@ -10,9 +11,10 @@ import jTAdventure.World.World;
 public class Main {
     public static void main(String[] args) {
         //init
+        System.out.println("Making world...");
         World world = new World();
-        Initializer.init();
         //init
+        System.out.println("READY");
         world.Run();
     }
 }

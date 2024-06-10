@@ -6,7 +6,8 @@
         <x>0</x>
         <y>0</y>
         <z>0</z>
-        <color>ANSI_YELLOW</color>
+        <exits>north south east</exits>
+        <color>YELLOW</color>
         <glyph>¤</glyph>
     </room>
     <room title="The Garden's Gates">
@@ -16,7 +17,8 @@
         <x>0</x>
         <y>1</y>
         <z>0</z>
-        <color>ANSI_GREEN</color>
+        <exits>south</exits>
+        <color>GREEN</color>
         <glyph>G</glyph>
     </room>
     <room title="The Garden's Fountains">
@@ -26,18 +28,31 @@
         <x>1</x>
         <y>0</y>
         <z>0</z>
-        <color>ANSI_BLUE</color>
-        <glyph>F</glyph>
+        <exits>west south</exits>
+        <color>BLUE</color>
+        <glyph>v</glyph>
     </room>
     <room title="The Garden's Armoury">
         <description>
             Your masters have gracefully supplied you the arms necessary for your journey.
         </description>
-        <x>-1</x>
-        <y>0</y>
+        <x>1</x>
+        <y>-1</y>
         <z>0</z>
-        <color>ANSI_RED</color>
+        <exits>down north</exits>
+        <color>RED</color>
         <glyph>â</glyph>
+    </room>
+    <room title="Armoury Basement">
+        <description>
+            Decrepit, but not yet looted. That will be *your* job.
+        </description>
+        <x>1</x>
+        <y>-1</y>
+        <z>-1</z>
+        <exits>up</exits>
+        <color>BRIGHT_BLACK</color>
+        <glyph>#</glyph>
     </room>
     <room title="Elevator to Heaven">
         <description>
@@ -46,7 +61,8 @@
         <x>0</x>
         <y>-1</y>
         <z>0</z>
-        <color>ANSI_WHITE</color>
+        <exits>north</exits>
+        <color>WHITE</color>
         <glyph>±</glyph>
     </room>
 </rooms>

@@ -1,4 +1,4 @@
-package jTAdventure.Commander;
+package jtadventure.commander;
 
 import java.lang.annotation.*;
 

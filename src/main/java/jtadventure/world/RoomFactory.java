@@ -1,7 +1,9 @@
-package jTAdventure.World;
+package jtadventure.world;
 
-import jTAdventure.XML.xmlReader;
+import jtadventure.xml.xmlReader;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Objects;
 
@@ -17,10 +19,11 @@ import org.w3c.dom.Element;
     things should be hardcoded as little as possible, as a rule
  */
 public class RoomFactory {
+        private RoomFactory() { throw new IllegalStateException(); }
         public static HashMap<Integer, Room> make() {
+            HashMap<Integer, Room> map = new HashMap<>();
             try {
-                Document document = xmlReader.readXML("src/main/resources/XML/Rooms.xml");
-                HashMap<Integer, Room> map = new HashMap<>();
+                Document document = xmlReader.readXML("src/main/resources/xml/rooms.xml");
                 NodeList roomList = document.getElementsByTagName("room");
                 for (int temp = 0; temp < roomList.getLength(); temp++) {
                     Node node = roomList.item(temp);
@@ -33,7 +36,9 @@ public class RoomFactory {
                         int z = Integer.parseInt(Objects.requireNonNull(getTagValue("z", eElement)));
                         String color = Objects.requireNonNull(getTagValue("color", eElement));
                         String glyph = Objects.requireNonNull(getTagValue("glyph", eElement));
-                        Room room = new Room(title, description.trim(), x, y, z, color, glyph);
+                        ArrayList<String> roomExits = getRoomExits(eElement);
+                        Room room = new Room(title, description.trim(),
+                                x, y, z, color, glyph, roomExits);
                         //temp serves as mapID, in order of creation
                         map.put(temp, room);
                     }
@@ -41,7 +46,7 @@ public class RoomFactory {
                 return map;
             } catch (Exception e) {
                 System.out.println(e.getMessage());
-                return null;
+                return map;
             }
     }
 
@@ -52,5 +57,14 @@ public class RoomFactory {
             return null;
         }
         return nValue.getNodeValue();
+    }
+
+    private static ArrayList<String> getRoomExits(Element eElement) {
+        NodeList nlList = eElement.getElementsByTagName("exits").item(0).getChildNodes();
+        ArrayList<String> roomExits = new ArrayList<>();
+        if (nlList.getLength() == 0) { return roomExits; }
+        String[] exits = nlList.item(0).getNodeValue().toString().trim().split(" ");
+        roomExits.addAll(Arrays.asList(exits));
+        return roomExits;
     }
 }

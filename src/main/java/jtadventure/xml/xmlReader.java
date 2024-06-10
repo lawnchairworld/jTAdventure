@@ -1,4 +1,4 @@
-package jTAdventure.XML;
+package jtadventure.xml;
 
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.DocumentBuilder;

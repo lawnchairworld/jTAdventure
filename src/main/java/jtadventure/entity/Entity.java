@@ -1,4 +1,4 @@
-package jTAdventure.Entity;
+package jtadventure.entity;
 
 /*
     default null entity should be a Perfectly Generic Object

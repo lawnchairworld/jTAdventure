@@ -1,24 +1,20 @@
-package jTAdventure.Commander;
+package jtadventure.commander;
 
-import jTAdventure.Color;
-import jTAdventure.Entity.Player;
+import jtadventure.Color;
+import jtadventure.entity.Player;
 
 import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.HashMap;
 
-
-//regex magic goes here
-//must extract an initial command verb, then an argument (if any), then any modifiers (if any)
-//if an input is invalid it should be able to pattern match and suggest what might have been meant
 public class Parser {
     //grab all methods (and presumably all information like annotations)
     Method[] commands = Commands.class.getMethods();
     Command command;
     Commands com;
-    HashMap<String[], Method> commandMap;
+    static HashMap<String[], Method> commandMap;
+    public static HashMap<String, String> colorMap = new HashMap<>();
     Player player;
-
     public Parser(Player user) {
         this.player = user;
         com = new Commands(this.player);
@@ -30,8 +26,12 @@ public class Parser {
                 commandMap.put(command.aliases(), m);
             }
         }
+        for (Color.ColorCode c : Color.ColorCode.values()) {
+            colorMap.put(c.toString(), c.code);
+        }
     }
 
+    //todo slice input into pieces, deduce command based off 1st word, then invoke command with args
     public void parse(String input) {
         try {
             int i = 0;
@@ -46,10 +46,14 @@ public class Parser {
             }
             //when ran through all commands print error
             if (i == commandMap.keySet().size()) {
-                System.out.println(Color.color(input, Color.ANSI_RED) + " was not understood.");
+                System.out.println(Color.color(input, colorMap.get("RED")) + " was not understood.");
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+    }
+
+    public static HashMap<String[], Method> getCommandMap() {
+        return commandMap;
     }
 }
